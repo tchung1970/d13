@@ -72,7 +72,7 @@ docker run -it -v $(pwd):/app -w /app tchung1970/d13:latest bash
 ## Author
 
 **Thomas Chung**  
-Created: September 5, 2025
+Created: September 6, 2025
 
 ## License
 
