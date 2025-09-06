@@ -31,3 +31,11 @@ jobs:
           ${{ secrets.DOCKERHUB_USERNAME }}/d13:latest
           ${{ secrets.DOCKERHUB_USERNAME }}/d13:trixie
           ${{ secrets.DOCKERHUB_USERNAME }}/d13:13
+
+    - name: Update Docker Hub description
+      if: github.event_name != 'pull_request'
+      uses: peter-evans/dockerhub-description@v4
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+        repository: ${{ secrets.DOCKERHUB_USERNAME }}/d13
