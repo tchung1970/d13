@@ -32,6 +32,9 @@ jobs:
           ${{ secrets.DOCKERHUB_USERNAME }}/d13:latest
           ${{ secrets.DOCKERHUB_USERNAME }}/d13:trixie
           ${{ secrets.DOCKERHUB_USERNAME }}/d13:13
+        attestations: type=provenance,mode=max
+        provenance: true
+        sbom: true
 
     - name: Update Docker Hub description
       if: github.event_name != 'pull_request'

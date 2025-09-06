@@ -51,6 +51,7 @@ This image is automatically built and updated via GitHub Actions whenever change
 - **Source**: https://github.com/tchung1970/d13
 - **Build System**: GitHub Actions
 - **Registry**: Docker Hub
+- **Supply Chain**: Includes provenance attestations and SBOM for security
 
 ## Usage Examples
 
