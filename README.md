@@ -65,6 +65,7 @@ docker run tchung1970/d13:latest echo 'Hello from Debian 13!'
 ### Check Debian Version
 ```bash
 docker run tchung1970/d13:latest lsb_release -d
+docker run -it --rm tchung1970/d13:latest cat /etc/debian_version
 ```
 
 ### Development Environment
