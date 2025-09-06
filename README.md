@@ -79,6 +79,11 @@ docker run -it tchung1970/d13:latest bash -c "
 3. Test locally with `docker build -t d13 .`
 4. Submit a pull request
 
+## Author
+
+**Thomas Chung**  
+Created: September 5, 2025
+
 ## License
 
-This project is open source and available under standard terms.
+This project is open source and available under the MIT [LICENSE](LICENSE).
