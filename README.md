@@ -31,7 +31,7 @@ docker run -it --rm -v $(pwd):/workspace tchung1970/d13:latest bash
 ## Image Details
 
 - **Base Image**: `debian:trixie`
-- **Architecture**: `linux/amd64`
+- **Architecture**: `linux/amd64`, `linux/arm64`
 - **Size**: ~57 MB
 - **Included Packages**: 
   - `ca-certificates`
