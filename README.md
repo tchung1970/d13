@@ -76,4 +76,4 @@ Created: September 6, 2025
 
 ## License
 
-This project is open source and available under the MIT [LICENSE](LICENSE).
+This project is open source and available under the MIT [LICENSE](https://github.com/tchung1970/d13/blob/main/LICENSE).
