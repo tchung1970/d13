@@ -70,14 +70,6 @@ docker run tchung1970/d13:latest lsb_release -d
 docker run -it -v $(pwd):/app -w /app tchung1970/d13:latest bash
 ```
 
-### Installing Additional Packages
-```bash
-docker run -it tchung1970/d13:latest bash -c "
-  apt-get update && 
-  apt-get install -y python3 python3-pip &&
-  python3 --version
-"
-```
 
 ## Contributing
 
