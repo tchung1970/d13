@@ -11,8 +11,14 @@ ENV DEBIAN_FRONTEND=noninteractive \
 RUN apt-get update && \
     apt-get -y full-upgrade && \
     apt-get -y --no-install-recommends install \
-      ca-certificates curl wget tzdata lsb-release && \
+      ca-certificates curl wget tzdata lsb-release sudo && \
     rm -rf /var/lib/apt/lists/*
+
+# Create non-root user
+RUN useradd -m -s /bin/bash debian && \
+    usermod -aG sudo debian
+USER debian
+WORKDIR /home/debian
 
 # Default command
 CMD ["bash"]

@@ -39,10 +39,12 @@ docker run -it --rm -v $(pwd):/workspace tchung1970/d13:latest bash
   - `wget`  
   - `tzdata`
   - `lsb-release`
+  - `sudo`
 - **Environment**:
   - `DEBIAN_FRONTEND=noninteractive`
   - `TZ=Etc/UTC`
   - `LANG=C.UTF-8`
+- **Security**: Runs as non-root user `debian` with sudo access
 
 ## Automated Builds
 
