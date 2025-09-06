@@ -59,6 +59,12 @@ This image is automatically built and updated via GitHub Actions whenever change
 docker run tchung1970/d13:latest echo "Hello from Debian 13!"
 ```
 
+### Check Debian Version
+```bash
+docker run tchung1970/d13:latest lsb_release -d
+# Output: Description:    Debian GNU/Linux 13 (trixie)
+```
+
 ### Development Environment
 ```bash
 docker run -it -v $(pwd):/app -w /app tchung1970/d13:latest bash
