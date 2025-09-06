@@ -10,7 +10,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 # Basic updates + useful tools (keep lean)
 RUN apt-get update && \
     apt-get -y --no-install-recommends install \
-      ca-certificates curl wget tzdata && \
+      ca-certificates curl wget tzdata lsb-release && \
     rm -rf /var/lib/apt/lists/*
 
 # Default command

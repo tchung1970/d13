@@ -38,6 +38,7 @@ docker run -it --rm -v $(pwd):/workspace tchung1970/d13:latest bash
   - `curl`
   - `wget`  
   - `tzdata`
+  - `lsb-release`
 - **Environment**:
   - `DEBIAN_FRONTEND=noninteractive`
   - `TZ=Etc/UTC`
