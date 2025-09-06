@@ -57,11 +57,6 @@ This image is automatically built and updated via GitHub Actions whenever change
 
 ## Usage Examples
 
-### Basic Usage
-```bash
-docker run tchung1970/d13:latest echo 'Hello from Debian 13!'
-```
-
 ### Check Debian Version
 ```bash
 docker run -it --rm tchung1970/d13:latest cat /etc/debian_version
