@@ -70,12 +70,6 @@ docker run -it -v $(pwd):/app -w /app tchung1970/d13:latest bash
 ```
 
 
-## Contributing
-
-1. Fork the repository
-2. Make your changes
-3. Test locally with `docker build -t d13 .`
-4. Submit a pull request
 
 ## Author
 
