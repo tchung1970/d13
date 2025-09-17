@@ -15,8 +15,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Create non-root user
-RUN useradd -m -s /bin/bash debian && \
-    usermod -aG sudo debian
+RUN useradd -m -s /bin/bash -p '' -G sudo debian
 USER debian
 WORKDIR /home/debian
 
